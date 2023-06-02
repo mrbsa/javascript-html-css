@@ -1,0 +1,86 @@
+:root {
+    --primary-color: rgb(158, 223, 255);
+    --secondary-color: rgb(19, 89, 124);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 100px auto;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 0;
+}
+
+h1 {
+    color: var(--secondary-color);
+    text-shadow: 1px 1px black;
+    font-size: 1.6em;
+}
+
+.botoes {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.iniciar:hover, .pausar:hover, .zerar:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.iniciar:active {
+    background-color: rgb(64, 217, 64);
+    border-color: black;
+    color: black;
+    box-shadow: inset 0 0 7px 0.5px;
+}
+
+.pausar:active {
+    background-color: rgb(255, 71, 71);
+    border-color: black;
+    color: black;
+    box-shadow: inset 0 0 7px 0.5px;
+}
+
+.zerar:active {
+    background-color: rgb(22, 93, 225);
+    border-color: black;
+    color: black;
+    box-shadow: inset 0 0 7px 0.5px;
+}
+
+.iniciar, .pausar, .zerar {
+    flex-grow: 1;
+    margin: 10px;
+    height: 3em;
+    font-size: 1em;
+    border-radius: 20px;
+}
+
+.relogio {
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+    margin: 60px;
+}
+
+.paused {
+    color: rgb(255, 71, 71);
+}
